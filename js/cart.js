@@ -205,7 +205,7 @@ const formCommande = document.querySelector("form");
 
          
 
-          const reponse = await fetch(`http://localhost:3000/api/products/order`, {
+          const reponse = await fetch(`https://kanap-back-drab.vercel.app/api/products/order`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({contact, products: productsIds}),

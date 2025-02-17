@@ -11,7 +11,7 @@ const id = params.get("id"); // Permet de pointer le id du canape
  */
 const getCanape = async () => {       
     try {
-        const url = await fetch(`http://localhost:3000/api/products/${id}`);
+        const url = await fetch(`https://kanap-back-drab.vercel.app/api/products/${id}`);
         const reponse = await url.json();
         return reponse;
     } catch (erreur) {

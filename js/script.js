@@ -9,7 +9,7 @@
 
 const getProducts = async () => {
     try {
-        const url = await fetch("http://localhost:3000/api/products");
+        const url = await fetch("https://kanap-back-drab.vercel.app/api/products");
         const reponse = await url.json();
         return reponse;
     } catch (erreur) {
